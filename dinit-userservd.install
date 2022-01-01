@@ -1,0 +1,15 @@
+post_upgrade() {
+    echo """
+    POST INSTALL INSTRUCTIONS
+    ---------------------------------
+    you must add: session optional pam_dinit_userservd.so
+    to your /etc/pam.d/login or this package WILL NOT WORK
+    ---------------------------------
+    please install user service files to one of these locations (symlink to boot.d in same dir to enable):
+    ~/.config/dinit.d/
+    /etc/dinit/user/
+    /usr/lib/dinit.d/user/
+    /usr/local/lib/dinit.d/user/
+    ---------------------------------
+    """
+}
