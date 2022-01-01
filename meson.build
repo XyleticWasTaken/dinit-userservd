@@ -17,7 +17,8 @@ rt_dep = cpp.find_library('rt', required: false)
 daemon = executable(
     'dinit-userservd', 'dinit-userservd.cc',
     install: true,
-    gnu_symbol_visibility: 'hidden'
+    gnu_symbol_visibility: 'hidden',
+    dependencies: rt_dep
 )
 
 pam_mod = shared_module(
