@@ -1,6 +1,6 @@
 # artix specific
 
-PKGBUILs are here: https://github.com/XynonWasTaken/dinit-userservd-PKGBUILD
+PKGBUILDs are here: https://github.com/XynonWasTaken/dinit-userservd-PKGBUILD
 
 # dinit-userservd
 
