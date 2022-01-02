@@ -1,3 +1,7 @@
+# artix specific
+
+PKGBUILs are here: https://github.com/XynonWasTaken/dinit-userservd-PKGBUILD
+
 # dinit-userservd
 
 This is a daemon and a PAM module to handle user services management with the
