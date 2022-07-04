@@ -1,8 +1,8 @@
-# artix specific
+# Artix Specific Info
 
-PKGBUILDs are here: https://github.com/XynonWasTaken/dinit-userservd-PKGBUILD
+PKGBUILDs for dinit-userservd located at: https://github.com/XynonWasTaken/dinit-userservd-PKGBUILD
 
-services are here: https://github.com/XynonWasTaken/dinit-userservd-services
+Artix services for dinit-userservd located at: https://github.com/XynonWasTaken/dinit-userservd-services
 
 # dinit-userservd
 
