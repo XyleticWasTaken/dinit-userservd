@@ -17,8 +17,8 @@ rt_dep = cpp.find_library('rt', required: false)
 daemon = executable(
     'dinit-userservd', 'dinit-userservd.cc',
     install: true,
-    gnu_symbol_visibility: 'hidden',
-    dependencies: rt_dep
+    dependencies: [rt_dep],
+    gnu_symbol_visibility: 'hidden'
 )
 
 pam_mod = shared_module(
@@ -26,14 +26,8 @@ pam_mod = shared_module(
     install: true,
     install_dir: join_paths(get_option('libdir'), 'security'),
     name_prefix: '',
-    dependencies: [pam_dep, rt_dep],
+    dependencies: [pam_dep],
     gnu_symbol_visibility: 'hidden'
-)
-
-install_data(
-    'dinit-run-dbus',
-    install_dir: get_option('bindir'),
-    install_mode: 'rwxr-xr-x'
 )
 
 install_data(
